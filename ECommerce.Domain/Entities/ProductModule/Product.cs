@@ -21,13 +21,5 @@ namespace ECommerce.Domain.Entities.ProductModule
         public ProductType ProductType { get; set; } = default!;
         #endregion
     }
-    public class ProductBrand : BaseEntity<int>
-    {
-        public string Name { get; set; } = default!;
-    }
-    public class ProductType : BaseEntity<int>
-    {
-        public string Name { get; set; } = default!;
-    }
     #endregion
 }

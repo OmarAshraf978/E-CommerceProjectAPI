@@ -15,10 +15,5 @@ namespace ECommerce.Domain.Entities.BasketModule
         public decimal Price { get; set; }
         public int Quantity { get; set; }
     }
-    public class CustomerBasket
-    {
-        public string Id { get; set; } = default!;
-        public ICollection<BasketItem> Items { get; set; } = [];
-    }
     #endregion
 }
