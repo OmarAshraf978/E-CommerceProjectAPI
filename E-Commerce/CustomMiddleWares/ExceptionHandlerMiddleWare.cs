@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace E_Commerce.CustomMiddleWares
 {
+    #region ExceptionHandlerMiddleWare
     public class ExceptionHandlerMiddleWare
     {
         private readonly RequestDelegate _next;
@@ -55,4 +56,5 @@ namespace E_Commerce.CustomMiddleWares
             }
         }
     }
+    #endregion
 }
