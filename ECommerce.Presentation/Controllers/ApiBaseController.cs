@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace ECommerce.Presentation.Controllers
 {
+    #region ApiBaseController
     [ApiController]
     [Route("api/[controller]")]
     public class ApiBaseController : ControllerBase
@@ -71,4 +72,5 @@ namespace ECommerce.Presentation.Controllers
             _ => StatusCodes.Status500InternalServerError
         };
     }
+    #endregion
 }
