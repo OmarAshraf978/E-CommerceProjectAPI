@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace ECommerce.Presentation.Attributes
 {
+    #region RedisCacheAttribute
     public class RedisCacheAttribute : ActionFilterAttribute
     {
         private readonly int _duration;
@@ -51,4 +52,5 @@ namespace ECommerce.Presentation.Attributes
             return Key.ToString();
         }
     }
+    #endregion
 }
