@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace E_Commerce.Extentions
 {
+    #region WebApplicationRegistration
     public static class WebApplicationRegistration
     {
         public static async Task<WebApplication> MigrateDatabaseAsync(this WebApplication app)
@@ -45,4 +46,5 @@ namespace E_Commerce.Extentions
             return app;
         }
     }
+    #endregion
 }
