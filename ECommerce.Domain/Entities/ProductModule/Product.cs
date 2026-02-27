@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ECommerce.Domain.Entities.ProductModule
 {
+    #region ProductModule
     public class Product : BaseEntity<int>
     {
         public string Name { get; set; } = default!;
@@ -20,4 +21,5 @@ namespace ECommerce.Domain.Entities.ProductModule
         public ProductType ProductType { get; set; } = default!;
         #endregion
     }
+    #endregion
 }

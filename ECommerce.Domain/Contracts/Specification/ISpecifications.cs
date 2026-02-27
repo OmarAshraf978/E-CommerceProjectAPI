@@ -8,6 +8,7 @@ using ECommerce.Domain.Entities;
 
 namespace ECommerce.Domain.Contracts.Specification
 {
+    #region SpecificationDesignPattern
     public interface ISpecifications<TEntity, TKey> where TEntity : BaseEntity<TKey>
     {
         public ICollection<Expression<Func<TEntity, object>>> IncludeExpressions { get; }
@@ -18,4 +19,5 @@ namespace ECommerce.Domain.Contracts.Specification
         public int skip { get; }
         public bool IsPaginated { get; }
     }
+    #endregion
 }

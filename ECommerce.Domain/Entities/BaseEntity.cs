@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace ECommerce.Domain.Entities
 {
+    #region BaseEntity
     public abstract class BaseEntity<TKey>
     {
         public TKey Id { get; set; } = default!;
     }
+    #endregion
 }

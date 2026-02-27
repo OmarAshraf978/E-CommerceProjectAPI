@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ECommerce.Domain.Entities.BasketModule
 {
+    #region BasketModule
     public class BasketItem
     {
         public int Id { get; set; } 
@@ -14,4 +15,5 @@ namespace ECommerce.Domain.Entities.BasketModule
         public decimal Price { get; set; }
         public int Quantity { get; set; }
     }
+    #endregion
 }

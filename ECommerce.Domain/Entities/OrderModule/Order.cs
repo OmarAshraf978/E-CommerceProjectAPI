@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ECommerce.Domain.Entities.OrderModule
 {
+    #region OrderModule
     public class Order : BaseEntity<Guid>
     {
         public string UserEmail { get; set; } = default!;
@@ -17,4 +18,5 @@ namespace ECommerce.Domain.Entities.OrderModule
         public ICollection<OrderItem> OrderItems { get; set; } = [];
         public decimal Subtotal { get; set; }
     }
+    #endregion
 }

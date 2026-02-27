@@ -8,6 +8,7 @@ using ECommerce.Domain.Entities;
 
 namespace ECommerce.Domain.Contracts.IRepository
 {
+    #region GenericRepository
     public interface IGenericRepository<TEntity, TKey> where TEntity : BaseEntity<TKey>
     {
         Task<IEnumerable<TEntity>> GetAllAsync();
@@ -19,4 +20,5 @@ namespace ECommerce.Domain.Contracts.IRepository
         Task<TEntity> GetByIdWithSpecificationAsync(ISpecifications<TEntity, TKey> specifications);
         Task<int> CountAsync(ISpecifications<TEntity, TKey> specifications);
     }
+    #endregion
 }

@@ -2,6 +2,7 @@
 
 namespace E_Commerce.Factories
 {
+    #region ApiResponseFactory
     public static class ApiResponseFactory
     {
         public static IActionResult GenerateApiValidationResponse(ActionContext actionContext)
@@ -18,4 +19,5 @@ namespace E_Commerce.Factories
             return new BadRequestObjectResult(Problem);
         }
     }
+    #endregion
 }

@@ -26,6 +26,7 @@ using StackExchange.Redis;
 
 namespace E_Commerce
 {
+    #region MainProgram
     public class Program
     {
         public static async Task Main(string[] args)
@@ -115,4 +116,5 @@ namespace E_Commerce
             app.Run();
         }
     }
+    #endregion
 }
