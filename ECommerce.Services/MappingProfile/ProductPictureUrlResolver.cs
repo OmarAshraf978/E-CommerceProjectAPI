@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 
 namespace ECommerce.Services.MappingProfile
 {
+    #region PictureUrlResolver
     public class ProductPictureUrlResolver : IValueResolver<Product, ProductDto, string>
     {
         private readonly IConfiguration _configuration;
@@ -36,4 +37,5 @@ namespace ECommerce.Services.MappingProfile
             return pictureUrl;
         }
     }
+    #endregion
 }
